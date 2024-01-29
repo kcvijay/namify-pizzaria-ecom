@@ -1,0 +1,167 @@
+export const productsData = [
+  {
+    id: '6bd3f8b8-284f-4326-b4a6-a9d4c499585e',
+    productTitle: 'Margherita Pizza',
+    productDetails:
+      'Classic pizza with tomatoes, mozzarella and a touch of basil.',
+    image: '/margherita-pizza.jpg',
+    isVegan: true,
+    price: 7.9,
+    quantity: 1,
+  },
+  {
+    id: '576792ec-d632-cd67-845d-f430150fr8x3',
+    productTitle: 'Spaghetti Bolognese',
+    productDetails: 'Spaghetti with a rich tomato sauce and minced meat.',
+    image: '/spaghetti-bolognese.jpg',
+    price: 9.9,
+    isVegan: false,
+    quantity: 1,
+  },
+  {
+    id: '576792ec-cdr9-cd67-845d-f430k5lfr8x3',
+    productTitle: 'Vegetarian Pizza',
+    productDetails: 'Pizza with tomatoes, mozzarella, mushrooms and peppers.',
+    image: '/vegetarian-pizza.jpg',
+    price: 7.9,
+    isVegan: true,
+    quantity: 1,
+  },
+  {
+    id: '6125a2d1-470f-491d-9aa1-3f1e44ebfc45',
+    productTitle: 'Penne Alfredo',
+    productDetails: 'Penne pasta with parmesan and rich alfredo sauce.',
+    image: '/penne-alfredo.jpg',
+    price: 9.9,
+    isVegan: false,
+    quantity: 1,
+  },
+  {
+    id: 'fc8b059e-1a34-43db-9bc5-245fb0b17f95',
+    productTitle: 'Fettuccine Carbonara',
+    productDetails: 'Fettuccine pasta in rich and creamy bacon and egg sauce.',
+    image: '/fettuccine-carbonara.jpg',
+    price: 8.9,
+    isVegan: false,
+    quantity: 1,
+  },
+  {
+    id: 'f47a9e19-8697-4d82-aa69-9b9fb863e36c',
+    productTitle: 'Hawaiian Pizza',
+    productDetails: 'Pizza with tomatoes, mozzarella, ham and pineapple.',
+    image: '/hawaiian-pizza.jpg',
+    price: 7.9,
+    isVegan: false,
+    quantity: 1,
+  },
+  {
+    id: '3b5b3b3a-887d-4a07-93e7-2cf50cf090ed',
+    productTitle: 'Chicken Alfredo Pasta',
+    productDetails: 'Penne pasta with rich alfredo sauce and chicken.',
+    image: '/chicken-alfredo-pasta.jpg',
+    price: 9.9,
+    isVegan: false,
+    quantity: 1,
+  },
+  {
+    id: '3b5rbrb3a-779d-4a07-93e7-2cf50cf090ed',
+    productTitle: 'Pesto Mozzarella Pizza',
+    productDetails: 'Pizza with pesto, mozzarella and tomatoes.',
+    image: '/pesto-mozzarella-pizza.jpg',
+    price: 9.9,
+    isVegan: true,
+    quantity: 1,
+  },
+  {
+    id: '73f19d61-4378-43f4-9f45-0e2b184d1835',
+    productTitle: 'Double Salami Pizza',
+    productDetails: 'Pizza with double salami, tomatoes and mozzarella.',
+    image: '/double-salami-pizza.jpg',
+    price: 10.9,
+    isVegan: false,
+    quantity: 1,
+  },
+  {
+    id: '6e18885d-cf19-4f0c-b839-480f5a8a3e1c',
+    productTitle: 'Meatball Pasta',
+    productDetails: 'Penne pasta with rich tomato sauce and meatballs.',
+    image: '/meatball-pasta.jpg',
+    price: 10.9,
+    isVegan: false,
+    quantity: 1,
+  },
+];
+
+export const addressesWithDistance = [
+  {
+    id: 1,
+    address: 'Satamantie 1, Helsinki',
+    distance: 310,
+  },
+  {
+    id: 2,
+    address: 'Lokkalantie 12, Helsinki',
+    distance: 1200,
+  },
+  {
+    id: 3,
+    address: 'Kiskonkatu 120, Espoo',
+    distance: 2750,
+  },
+  {
+    id: 4,
+    address: 'Raumantie 1, Espoo',
+    distance: 1522,
+  },
+  {
+    id: 5,
+    address: 'Oliviankatu 10, Helsinki',
+    distance: 2610,
+  },
+  {
+    id: 6,
+    address: 'Satamantie 1, Helsinki',
+    distance: 755,
+  },
+  {
+    id: 7,
+    address: 'Ristirannantie 5C, Espoo',
+    distance: 4605,
+  },
+  {
+    id: 8,
+    address: 'Takomotie 5, Helsinki',
+    distance: 2550,
+  },
+  {
+    id: 9,
+    address: 'Luuvantie 3A, Vantaa',
+    distance: 1702,
+  },
+  {
+    id: 10,
+    address: 'Ristirannantie 5, Helsinki',
+    distance: 105,
+  },
+];
+
+export const chefs = [
+  {
+    id: 1,
+    name: 'Chef John Doe',
+    description: 'Award-winning chef specializing in Italian cuisine.',
+    image: '/chef-1.jpg',
+  },
+  {
+    id: 2,
+    name: 'Chef Johannes Berg',
+    description: 'Renowned pastry chef known for delicious desserts.',
+    image: '/chef-2.jpg',
+  },
+  {
+    id: 3,
+    name: 'Sous Chef Michael Johnson',
+    description: 'Fresh hospitality graduate, with the interest in Italian delicacies.',
+    image: '/chef-3.jpg',
+  },
+];

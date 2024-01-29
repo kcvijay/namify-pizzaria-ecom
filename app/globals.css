@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bg-hero {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url('/hero-pizza.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .bg-pizza {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url('/pizza-slices.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .content-header {
+    @apply text-2xl font-bold text-slate-700 text-center mb-16;
+  }
+
+  .btn {
+    @apply px-6 py-2 rounded-full transition-all duration-200 ease-in-out;
+  }
+
+  .btn-hero-cta {
+    @apply border border-white hover:text-slate-300 hover:border-slate-300;
+  }
+  .btn-add-cart {
+    @apply bg-orange-500 text-white hover:bg-orange-600 active:bg-orange-600 active:text-slate-200;
+  }
+
+  .badge {
+    @apply px-2 py-1 rounded-full text-xs font-bold text-white;
+  }
+
+  .hero-badge {
+    @apply w-full text-center px-6 py-2 text-white;
+  }
+
+  .badge-vegan {
+    @apply bg-green-500;
+  }
+
+  .badge-restaurant-open {
+    @apply bg-green-500;
+  }
+
+  .badge-restaurant-closed {
+    @apply bg-slate-500;
+  }
+
+  .grid-autofit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  button:disabled,
+  .btn-disabled {
+    @apply bg-slate-400 cursor-not-allowed hover:bg-slate-400 text-slate-300;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Hide the spinner in Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  .loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite;
+  }
+  .loader::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #878787;
+    animation: prixClipFix 400ms linear infinite;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes prixClipFix {
+    0% {
+      clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+    }
+    25% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+    }
+    50% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+    }
+    75% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+    }
+    100% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+  }
+}
