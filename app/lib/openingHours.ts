@@ -10,32 +10,32 @@ const daysofWeek = {
 const openingHours = [
   {
     day: daysofWeek.MONDAY,
-    open: 9,
+    open: 1,
     close: 24,
   },
   {
     day: daysofWeek.TUESDAY,
-    open: 9,
-    close: 21,
+    open: 1,
+    close: 24,
   },
   {
     day: daysofWeek.WEDNESDAY,
-    open: 9,
-    close: 21,
+    open: 1,
+    close: 24,
   },
   {
     day: daysofWeek.THURSDAY,
-    open: 9,
-    close: 21,
+    open: 1,
+    close: 24,
   },
   {
     day: daysofWeek.FRIDAY,
-    open: 9,
+    open: 1,
     close: 24,
   },
   {
     day: daysofWeek.SATURDAY,
-    open: 9,
+    open: 1,
     close: 24,
   },
   {
@@ -46,22 +46,21 @@ const openingHours = [
 ];
 
 export function isRestaurantOpen() {
-    const today = new Date();
-    const currentDay = today.getDay();
-    const currentHour = today.getHours();
+  const today = new Date();
+  const currentDay = today.getDay();
+  const currentHour = today.getHours();
 
-    const openingHoursToday = openingHours.find(
-        (openingHour) => openingHour.day === currentDay
-    );
+  const openingHoursToday = openingHours.find(
+    (openingHour) => openingHour.day === currentDay
+  );
 
-    if (
-        openingHoursToday &&
-        currentHour >= openingHoursToday.open &&
-        currentHour < openingHoursToday.close
-    ) {
-        return true;
-    } else {
-        return false;
-    }
+  if (
+    openingHoursToday &&
+    currentHour >= openingHoursToday.open &&
+    currentHour < openingHoursToday.close
+  ) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
